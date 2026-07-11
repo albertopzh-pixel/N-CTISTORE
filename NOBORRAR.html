@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NØCTIS — Hardcore Premium Cases</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+  <div class="scroll-progress" id="progress-bar"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">NØCTIS<span>.</span></a>
+      <nav class="nav" id="nav-menu">
+        <a href="#home" class="nav__link active">Inicio</a>
+        <a href="#featured" class="nav__link">Colecciones</a>
+        <a href="#craft" class="nav__link">Calidad</a>
+      </nav>
+      <button class="burger" id="burger-btn" aria-label="Menu"><i data-lucide="menu"></i></button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__media">
+        <div class="mockup-container">
+          <img src="https://i.postimg.cc/JzbcW3X6/lv-0-20260711101853.jpg" alt="NØCTIS Premium Case" class="mockup-img">
+        </div>
+      </div>
+            <div class="hero__content">
+        <span class="hero__tag">DROP 01</span>
+        <h1 class="hero__title">Built in <em>Silence</em>.</h1>
+        <p class="hero__desc">La primera colección de NØCTIS está en producción. Explora los modelos disponibles y forma parte del primer lanzamiento.</p>
+        <div class="hero__actions">
+          <a href="#featured" class="btn btn--primary">Ver modelos</a>
+          <a href="https://wa.me/541136269907?text=Hola!%20Quiero%20unirme%20al%20Drop%2001%20de%20NØCTIS%20y%20recibir%20las%20novedades." target="_blank" class="btn btn--secondary">Unirme al Drop 01</a>
+        </div>
+      </div>
+   </div>
+  </section>
+
+  <section class="featured" id="featured">
+    <div class="container">
+      <div class="section-header" style="text-align: center; justify-content: center;">
+        <div>
+          <span class="section-subtitle">COLLECTION I</span>
+          <h2 class="section-title">Crown <em>Edition</em></h2>
+        </div>
+      </div>
+
+      <div class="selector-box">
+        <label for="modelSelect">Selecciona tu modelo</label>
+        <select id="modelSelect">
+          <option value="" disabled selected>- Elige tu teléfono -</option>
+          <option value="iPhone 13">iPhone 13</option>
+          <option value="iPhone 14">iPhone 14</option>
+          <option value="iPhone 15">iPhone 15</option>
+          <option value="iPhone 16">iPhone 16</option>
+          <option value="Galaxy S23">Galaxy S23</option>
+          <option value="Galaxy S24">Galaxy S24</option>
+          <option value="Redmi Note 13 Pro">Redmi Note 13 Pro</option>
+          <option value="Redmi Note 14 Pro">Redmi Note 14 Pro</option>
+        </select>
+      </div>
+      
+      <div class="mockup-container dynamic-container">
+        <img id="dynamicMockup" src="https://i.postimg.cc/vHnXrVmz/lv-0-20260708083044.jpg" alt="NØCTIS Crown Edition" class="mockup-img">
+      </div>
+
+      <div style="text-align: center;">
+        <button id="whatsappBtn" class="btn btn--primary checkout-btn" onclick="redirectToWhatsApp()">
+          Avisarme cuando esté dispoble
+        </button>
+      </div>
+    </div>
+  </section>       
+
+  <section class="craft" id="craft">
+    <div class="container craft__inner">
+      <div class="craft__media"><img src="https://i.imgur.com/jypiauW.jpg" alt="Packaging"></div>
+      <div class="process-timeline">
+        <div class="process-item">
+          <div class="process-icon"></div>
+          <div class="process-content">
+            <h3 class="process-title">01. Materiales de Grado Militar</h3>
+            <p class="process-desc">Construidas con polímeros de alta densidad que absorben impactos externos sin transferir energía a tu dispositivo.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <div class="process-icon"></div>
+          <div class="process-content">
+            <h3 class="process-title">02. Impresión de Alta Definición</h3>
+            <p class="process-desc">Gráficas curadas con inyección de tinta UV que resiste el desgaste del uso diario, la humedad y el paso del tiempo.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <div class="process-icon"></div>
+          <div class="process-content">
+            <h3 class="process-title">03. Experiencia Premium Unboxing</h3>
+            <p class="process-desc">Cada drop se entrega en su caja NØCTIS rígida diseñada a medida, protegiendo el producto hasta que llega a tus manos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="philosophy" id="philosophy">
+    <div class="container">
+      <div class="section-header" style="justify-content: center; text-align: center;">
+        <div>
+          <span class="section-subtitle">Nuestra Señal</span>
+          <h2 class="section-title">Para quienes construyen cuando el mundo <em>descansa</em>.</h2>
+        </div>
+      </div>
+      <div class="philosophy__grid">
+        <div class="phil-card">
+          <i data-lucide="moon" class="phil-icon"></i>
+          <h3 class="phil-title">Disciplina Nocturna</h3>
+          <p class="phil-desc">El trabajo real empieza cuando los demás se rinden. Nuestros accesorios están diseñados para quienes persisten.</p>
+        </div>
+        <div class="phil-card">
+          <i data-lucide="sparkles" class="phil-icon"></i>
+          <h3 class="phil-title">Estética Impecable</h3>
+          <p class="phil-desc">Cada textura, cada sombra y cada brillo están calculados para que tu setup grite poder sin decir una palabra.</p>
+        </div>
+        <div class="phil-card">
+          <div class="shield-box" style="display:flex; justify-content:center;"><i data-lucide="shield-check" class="phil-icon"></i></div>
+          <h3 class="phil-title">Protección Hardcore</h3>
+          <p class="phil-desc">No hacemos fundas delicadas. Creamos armaduras que protegen tu identidad visual mientras soportan el caos del día a día.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 NØCTIS. Todos los derechos reservados.</p>
+      <p class="footer__info">Envíos a todo el país | Diseñado para quienes marcan la diferencia</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/541136269907" class="whatsapp-float" target="_blank" aria-label="Contacto por WhatsApp">
+    <i data-lucide="message-circle"></i>
+  </a>
+
+  <script>
+    lucide.createIcons();
+
+    // Mapeo de imágenes por modelo. 
+    // REEMPLAZÁ LOS LINKS DE ABAJO POR TUS MOCKUPS DE PORTIMAGES CORRESPONDIENTES:
+    const mockupsPorModelo = {
+      "iPhone 13": "https://i.postimg.cc/DwPh4DsX/lv-0-20260711082708.jpg",
+      "iPhone 14": "https://i.postimg.cc/ZnQt4tGm/lv-0-20260711082905.jpg",
+      "iPhone 15": "https://i.postimg.cc/4d5XC0fF/lv-0-20260711083021.jpg",
+      "iPhone 16": "https://i.postimg.cc/sxw8D97C/lv-0-20260710182635.jpg",
+      "Galaxy S23": "https://i.postimg.cc/rs3mbWsT/lv-0-20260710182327.jpg",
+      "Galaxy S24": "https://i.postimg.cc/MHN7Dn8c/lv-0-20260710182123.jpg",
+      "Redmi Note 13 Pro": "https://i.postimg.cc/d0fVDrR9/lv-0-20260710181945.jpg",
+      "Redmi Note 14 Pro": "https://i.postimg.cc/xd8ZjFP0/lv-0-20260711083129.jpg"
+    };
+
+    // Cambiar imagen dinámicamente al seleccionar modelo
+    const modelSelect = document.getElementById('modelSelect');
+    const dynamicMockup = document.getElementById('dynamicMockup');
+
+    modelSelect.addEventListener('change', (e) => {
+      const modeloSeleccionado = e.target.value;
+      if (mockupsPorModelo[modeloSeleccionado]) {
+        dynamicMockup.style.opacity = '0'; // Efecto fade out suave
+        setTimeout(() => {
+          dynamicMockup.src = mockupsPorModelo[modeloSeleccionado];
+          dynamicMockup.style.opacity = '1'; // Fade in
+        }, 200);
+      }
+    });
+
+    // Menú Mobile
+    const burgerBtn = document.getElementById('burger-btn');
+    const navMenu = document.getElementById('nav-menu');
+    burgerBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('is-open');
+      const icon = burgerBtn.querySelector('i');
+      icon.setAttribute('data-lucide', navMenu.classList.contains('is-open') ? 'x' : 'menu');
+      lucide.createIcons();
+    });
+
+    document.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('is-open');
+        burgerBtn.querySelector('i').setAttribute('data-lucide', 'menu');
+        lucide.createIcons();
+      });
+    });
+
+    // Barra de progreso scroll
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('progress-bar').style.width = scrolled + '%';
+    });
+
+    // Envío a WhatsApp
+        function redirectToWhatsApp() {
+      const selectedModel = modelSelect.value;
+      if (!selectedModel) {
+        alert('Por favor, selecciona el modelo de tu teléfono.');
+        return;
+      }
+      const phoneNumber = '541136269907';
+      const message = `Hola. Quiero que me avisen cuando el Drop 01 de NØCTIS esté disponible para mi modelo: *${selectedModel}*.`;
+      window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+    }
+
+  </script>
+</body>
+</html>
